@@ -2,89 +2,135 @@
     Root Variables
     ----------------------*/
 
-   :root {
-       --primary-dark: #014F86;
-       --primary: #2A6F97;
-       --background: #FAFAF5;
-       --surface: #CFE8EA;
-       --surface-secondary: #F7FBFD;
-       --text: #1f1f1f;
-       --light-text: #ffffff;
-       --accent: #FF6F59;
-       --border: #CCCCCC;
-       --font-heading: 'Quicksand', sans-serif;
-       --font-body: 'Nunito', sans-serif;
+:root {
+    --primary-dark: #014F86;
+    --primary: #2A6F97;
+    --background: #FAFAF5;
+    --surface: #CFE8EA;
+    --surface-secondary: #F7FBFD;
+    --text: #1f1f1f;
+    --light-text: #ffffff;
+    --accent: #FF6F59;
+    --border: #CCCCCC;
+    --font-heading: 'Quicksand', sans-serif;
+    --font-body: 'Nunito', sans-serif;
 
-       --radius: 6px;
-   }
+    --radius: 6px;
+}
 
-   /*-----------------------
+/*-----------------------
     Base Styles
     ----------------------*/
 
-   body {
-       font-family: var(--font-body);
-       margin: 0;
-       background: var(--background);
-       color: var(--text);
-   }
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+}
 
-   h1, h2, h3, h4 {
-       font-family: var(--font-heading);
-   }
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+}
 
-   /*-----------------------
+/*-----------------------
     Header & Footer Styles
     ----------------------*/
 
-   header, footer {
-       background: var(--primary);
-       color: var(--light-text);
-       padding: 20px;
-   }
+header,
+footer {
+    background: var(--primary);
+    color: var(--light-text);
+    padding: 20px;
+}
 
-   header {
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       padding: 1rem 2rem;
-   }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
 
-   .branding {
-       display: flex;
-       align-items: center;
-       gap: 1rem;
-   }
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
-   .logo {
-       height: 70px;
-       width: auto;
-   }
+.logo {
+    height: 70px;
+    width: auto;
+}
 
-   .header-text {
-       display: flex;
-       flex-direction: column;
-   }
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
 
-   /*-----------------------
+/*-----------------------
     Navigation
     ----------------------*/
 
-   nav ul {
-       list-style: none;
-       padding: 0;
-       margin: 0;
-       display: flex;
-       gap: 1.5rem;
-   }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+}
 
-   nav a {
-       color: var(--light-text);
-       text-decoration: none;
-       font-weight: bold;
-       font-family: var(--font-heading)
-   }
+nav a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font-heading)
+}
 
-    nav a:hover {
-         color: var(--accent);
-    }
+nav a:hover {
+    color: var(--accent);
+}
+
+/*-----------------------
+    Hero section - homepage
+    ----------------------*/
+
+.hero {
+    background: var(--primary-dark);
+    color: var(--light-text);
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: var(--radius);
+    margin: 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-button {
+    background: var(--accent);
+    color: var(--text);
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-weight: 600;
+}
+
+.hero-button:hover {
+    background: var(--surface);
+}
