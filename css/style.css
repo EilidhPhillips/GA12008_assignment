@@ -1,0 +1,19 @@
+/*-----------------------
+    Root Variables
+    ----------------------*/
+
+   :root {
+       --primary-dark: #014F86;
+       --primary: #2A6F97;
+       --background: #FAFAF5;
+       --surface: #CFE8EA;
+       --surface-secondary: #F7FBFD;
+       --text: #1f1f1f;
+       --light-text: #ffffff;
+       --accent: #FF6F59;
+       --border: #CCCCCC;
+       --font-heading: 'Quicksand', sans-serif;
+       --font-body: 'Nunito', sans-serif;
+
+       --radius: 6px;
+   }
