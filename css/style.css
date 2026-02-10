@@ -193,3 +193,52 @@ button, .contact-form button{
 button:hover, .contact-form button:hover {
     background: var(--primary);
 }
+
+
+
+/*-----------------------
+    Articles & Feature Sections
+    ----------------------*/
+
+.features { 
+    margin-top: 3rem; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+    gap: 1.5rem; 
+    padding: 0 2rem;
+} 
+
+.features h2 { 
+    grid-column: 1 / -1; 
+    margin-bottom: 1rem; 
+} 
+
+ 
+article {
+    background: var(--surface);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+article a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+section[aria-labelledby="features-title"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+section[aria-labelledby="features-title"] h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+}
