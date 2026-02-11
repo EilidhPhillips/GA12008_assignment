@@ -305,3 +305,15 @@ tbody tr:nth-child(even) {
 .card h2 { 
     margin-top: 0; 
 }
+
+
+/*-----------------------
+    Responsive Design
+    ----------------------*/
+
+
+@media (max-width: 700px) {
+    .current-info {
+        flex-direction: column;
+    }
+}
