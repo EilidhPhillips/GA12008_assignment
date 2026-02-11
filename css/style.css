@@ -248,3 +248,60 @@ section[aria-labelledby="features-title"] h2 {
     grid-column: 1 / -1;
     margin-bottom: 1rem;
 }
+
+
+ /*-----------------------
+    Tables
+    ----------------------*/
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+}
+
+table {
+   width: 100%;
+   min-width: 500px;
+   border-collapse: collapse;
+   background: var(--background);
+   margin-top: 15px;
+}
+
+th, td {
+   padding: 12px;
+   border: 1px solid var(--border);
+    text-align: center;
+}
+
+thead {
+   background: var(--primary-dark);
+    color: var(--light-text);
+}
+
+tbody tr:nth-child(even) {
+   background: var(--surface);
+}
+
+/*-----------------------
+    Profile - cards
+    ----------------------*/
+
+.current-info { 
+    display: flex; 
+    gap: 2rem; 
+    margin: 2rem 0; 
+} 
+
+.current-info section { 
+    flex: 1; 
+}
+
+.card { 
+    background: var(--surface); 
+    padding: 1.5rem; 
+    border-radius: var(--radius); 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08); 
+} 
+
+.card h2 { 
+    margin-top: 0; 
+}
