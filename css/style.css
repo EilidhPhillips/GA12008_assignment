@@ -254,8 +254,9 @@ section[aria-labelledby="features-title"] h2 {
     Tables
     ----------------------*/
 .table-container {
-    overflow-x: auto;
+    overflow: auto;
     width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
 }
 
 table {
@@ -263,18 +264,19 @@ table {
    min-width: 500px;
    border-collapse: collapse;
    background: var(--background);
-   margin-top: 15px;
+   
+   
 }
 
 th, td {
    padding: 12px;
    border: 1px solid var(--border);
-    text-align: center;
+   text-align: center;
 }
 
 thead {
    background: var(--primary-dark);
-    color: var(--light-text);
+   color: var(--light-text);
 }
 
 tbody tr:nth-child(even) {
