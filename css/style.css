@@ -7,14 +7,12 @@
     --primary: #2A6F97;
     --background: #FAFAF5;
     --surface: #CFE8EA;
-    --surface-secondary: #F7FBFD;
     --text: #1f1f1f;
     --light-text: #ffffff;
     --accent: #FF6F59;
     --border: #CCCCCC;
     --font-heading: 'Quicksand', sans-serif;
     --font-body: 'Nunito', sans-serif;
-
     --radius: 6px;
 }
 
@@ -29,26 +27,22 @@ body {
     color: var(--text);
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-family: var(--font-heading);
 }
 
 main {
-    padding: 20px;
+    padding: 2rem;
 }
 
 /*-----------------------
     Header & Footer Styles
     ----------------------*/
 
-header,
-footer {
+header, footer {
     background: var(--primary);
     color: var(--light-text);
-    padding: 20px;
+    padding: 2rem;
 }
 
 header {
@@ -90,7 +84,7 @@ nav a {
     color: var(--light-text);
     text-decoration: none;
     font-weight: bold;
-    font-family: var(--font-heading)
+    font-family: var(--font-heading);
 }
 
 nav a:hover {
@@ -107,7 +101,7 @@ nav a:hover {
     padding: 4rem 2rem;
     text-align: center;
     border-radius: var(--radius);
-    margin: 2rem;
+    margin: 2rem 0;
 }
 
 .hero-content {
@@ -145,15 +139,13 @@ nav a:hover {
 
 .contact-container {
     display: flex;
-    justify-content: space-evenly;
     gap: 3rem;
     padding: 2rem;
     background: var(--background);
     margin-top: 2rem;
 }
 
-.contact-details,
-.contact-form {
+.contact-details, .contact-form {
     flex: 1;
     min-width: 0;
     background: var(--surface);
@@ -169,7 +161,7 @@ nav a:hover {
 .contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .contact-form input,
@@ -186,13 +178,12 @@ nav a:hover {
     ----------------------*/
 
 
-
 button,
 .contact-form button {
     background: var(--accent);
     color: var(--text);
     border: none;
-    padding: 10px 15px;
+    padding: 0.75rem 1.5rem;
     cursor: pointer;
     font-family: var(--font-heading);
     font-weight: 600;
@@ -205,23 +196,13 @@ button:hover,
     color: var(--light-text);
 }
 
-button {
-    background: var(--accent);
-    color: var(--text);
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-family: var(--font-heading);
-    font-weight: 600;
-    border-radius: 4px;
-}
+/*-----------------------
+    Information page 
+    ----------------------*/
 
-button:hover {
-    background: var(--primary);
-    color: var(--light-text);
-}
 
-a:link.contact-button, a:visited.contact-button {
+a:link.contact-button, 
+a:visited.contact-button {
     background-color: var(--accent);
     color: var(--text);
     padding: 14px 25px;
@@ -230,7 +211,8 @@ a:link.contact-button, a:visited.contact-button {
     display: inline-block;
 }
 
-a:hover.contact-button, a:active.contact-button {
+a:hover.contact-button, 
+a:active.contact-button {
     background: var(--primary);
     color: var(--light-text);
 }
@@ -241,9 +223,9 @@ a:hover.contact-button, a:active.contact-button {
     ----------------------*/
 
 .features {
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
     padding: 0 2rem;
 }
@@ -271,29 +253,15 @@ article a:hover {
     text-decoration: underline;
 }
 
-section[aria-labelledby="features-title"] {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-section[aria-labelledby="features-title"] h2 {
-    grid-column: 1 / -1;
-    margin-bottom: 1rem;
-}
 
 article.services-overview {
-    background: var(--surface);
-    padding: 1.5rem;
-    border-radius: var(--radius);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
     margin-bottom: 2rem;
 }
 
 /*-----------------------
     Tables
     ----------------------*/
+
 .table-container {
     overflow: auto;
     width: 100%;
@@ -305,13 +273,11 @@ table {
     min-width: 500px;
     border-collapse: collapse;
     background: var(--background);
-
-
 }
 
 th,
 td {
-    padding: 12px;
+    padding: 0.75rem;
     border: 1px solid var(--border);
     text-align: center;
 }
