@@ -36,7 +36,6 @@
   <li>Two‑column layout with equal‑width cards</li>
   <li>Contact details and a fully styled contact form</li>
   <li>Mobile‑friendly stacked layout</li>
-  <li>Accessible form labels and structure</li>
 </ul>
 
 <h4>Design System</h4>
