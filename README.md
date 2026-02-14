@@ -1,6 +1,9 @@
 # GA12008_assignment
 <h2>Assignment 1 for module GA12008 - Information Systems Development &amp; Management</h2>
 
+<p>Git Repositry: <a href="https://github.com/EilidhPhillips/GA12008_assignment.git">https://github.com/EilidhPhillips/GA12008_assignment.git</a></p>
+<p> Published website: <a href="https://eilidhphillips.github.io/GA12008_assignment/index.html">https://eilidhphillips.github.io/GA12008_assignment/index.html</a></p>
+
 <h3>Overview</h3>
 
 <p>This project is a web-interface for the fiction company Seal Energy's Customer Information Portal. The portal is designed to provide customers with clear information about energy services, tariffs, contact options, and personal account details.</p>
