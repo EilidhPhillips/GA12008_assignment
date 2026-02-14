@@ -145,7 +145,8 @@ nav a:hover {
     margin-top: 2rem;
 }
 
-.contact-details, .contact-form {
+.contact-details, 
+.contact-form {
     flex: 1;
     min-width: 0;
     background: var(--surface);
