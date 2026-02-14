@@ -26,6 +26,7 @@ body {
     margin: 0;
     background: var(--background);
     color: var(--text);
+    line-height: 1.5;
 }
 
 h1,
@@ -36,6 +37,8 @@ h4 {
 }
 
 main {
+    max-width: 1500px; 
+    margin: 0 auto;
     padding: 2rem;
 }
 
@@ -52,14 +55,13 @@ header,
 footer {
     background: var(--primary);
     color: var(--light-text);
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
 }
 
 .site-title {
@@ -108,6 +110,13 @@ nav a:hover {
     color: var(--accent);
 }
 
+nav a:focus-visible, 
+a.contact-button:focus-visible, 
+article a:focus-visible { 
+    outline: 2px solid var(--accent); 
+    outline-offset: 2px; 
+}
+
 /*-----------------------
     Hero section - homepage
     ----------------------*/
@@ -139,11 +148,12 @@ nav a:hover {
 .hero-button {
     background: var(--accent);
     color: var(--text);
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;
     border-radius: 4px;
     text-decoration: none;
     font-family: var(--font-heading);
     font-weight: 600;
+    display: inline-block;
 }
 
 .hero-button:hover {
@@ -184,7 +194,7 @@ nav a:hover {
 
 .contact-form input,
 .contact-form textarea {
-    padding: 10px;
+    padding: 0.75rem;
     border: 1px solid var(--border);
     border-radius: 4px;
     font-family: var(--font-body);
@@ -223,7 +233,7 @@ a:link.contact-button,
 a:visited.contact-button {
     background-color: var(--accent);
     color: var(--text);
-    padding: 14px 25px;
+    padding: 0.75rem 1.5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -289,7 +299,8 @@ article.services-overview {
 table {
     width: 100%;
     min-width: 500px;
-    border-collapse: collapse;
+    border-collapse: separate; 
+    border-spacing: 0;
     background: var(--background);
 }
 
