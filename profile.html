@@ -35,36 +35,37 @@
     </header>
 
     <main>
-        
-            <h1>Welcome, Jane Doe</h1>
-            <p>Here you can view your account details, energy usage, and current tariff information.</p>
+
+        <h1>Welcome, Jane Doe</h1>
+        <p>Here you can view your account details, energy usage, and current tariff information.</p>
 
         <div class="current-info">
-            <section class="account-info card">
-                <h2>Account Information</h2>
+            <section class="account-info card" aria-labelledby="account-info-title">
+                <h2 id="account-info-title">Account Information</h2>
                 <p><strong>Customer Name:</strong> Jane Doe</p>
                 <p><strong>Account Number:</strong> 123456789</p>
                 <p><strong>Current Balance:</strong> £54.20</p>
             </section>
 
-            <section class="current-tariff card">
-                <h2>Current Tariff</h2>
+            <section class="current-tariff card" aria-labelledby="current-tariff-title">
+                <h2 id="current-tariff-title">Current Tariff</h2>
                 <p><strong>Tariff Name:</strong> Green Energy Saver</p>
                 <p><strong>Rate:</strong> 15p/kWh for electricity, 5p/kWh for gas</p>
                 <p><strong>Renewable Percentage:</strong> 100% renewable energy</p>
             </section>
         </div>
 
-        <section>
-            <h2>Energy Usage Summary</h2>
+        <section aria-labelledby="energy-usage-title">
+            <h2 id="energy-usage-title">Energy Usage Summary</h2>
             <div class="table-container">
                 <table>
+                    <caption class="visually-hidden">Monthly gas, electricity, and cost summary</caption>
                     <thead>
                         <tr>
-                            <th>Month</th>
-                            <th>Gas (kWh)</th>
-                            <th>Electricity (kWh)</th>
-                            <th>Cost (£)</th>
+                            <th scope="col">Month</th>
+                            <th scope="col">Gas (kWh)</th>
+                            <th scope="col">Electricity (kWh)</th>
+                            <th scope="col">Cost (£)</th>
                         </tr>
                     </thead>
                     <tbody>
